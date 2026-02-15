@@ -70,6 +70,9 @@ class DoublyList : public List<T> {
         // overloaded stream insertion operator to make printing easier
         template <typename U>
         friend ostream& operator<<(ostream&, const DoublyList<U>&);
+
+        // helper function to get node at position 
+        Node* getNode(int) const;
 };
 
 #include "DoublyList.tpp"
